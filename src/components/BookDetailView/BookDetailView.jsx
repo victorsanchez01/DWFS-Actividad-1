@@ -52,10 +52,6 @@ function BookDetailView({ bookId }) {
 
                 <ul className="book-detail__info-list">
                     <li className="book-detail__info-item">
-                        <span className="book-detail__info-label">ISBN:</span>
-                        <span>{book.isbn}</span>
-                    </li>
-                    <li className="book-detail__info-item">
                         <span className="book-detail__info-label">Año:</span>
                         <span>{book.year}</span>
                     </li>
