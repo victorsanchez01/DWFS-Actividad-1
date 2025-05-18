@@ -1,5 +1,5 @@
 .header {
-    background-color: white;
+    background-color: #F7F1F8;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -39,7 +39,7 @@
 }
 
 .header__nav-link:hover {
-    color: #0066cc;
+    color: #5E548E;
 }
 
 .header__cart-button {

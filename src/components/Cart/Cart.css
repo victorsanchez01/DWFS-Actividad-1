@@ -85,7 +85,7 @@
 .cart__checkout {
     width: 100%;
     padding: 0.7rem;
-    background-color: #0066cc;
+    background-color: #5E548E;
     color: white;
     border: none;
     border-radius: 4px;
@@ -94,7 +94,7 @@
 }
 
 .cart__checkout:hover {
-    background-color: #0055aa;
+    background-color: #231942;
 }
 
 .cart__checkout:disabled {

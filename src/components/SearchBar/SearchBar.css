@@ -16,13 +16,12 @@
 }
 
 .search-bar__input:focus {
-    border-color: #0066cc;
-    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+    border-color: #5E548E;
 }
 
 .search-bar__icon {
     position: absolute;
-    right: 1rem;
+    right: -1.5rem;
     top: 50%;
     transform: translateY(-50%);
     color: #777;
@@ -30,7 +29,7 @@
 
 .search-bar__button {
     position: absolute;
-    right: 0.5rem;
+    right: -1.5rem;
     top: 50%;
     transform: translateY(-50%);
     background: none;

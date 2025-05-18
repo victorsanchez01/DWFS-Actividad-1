@@ -1,7 +1,6 @@
 .footer {
-    background-color: #f7f7f7;
+    background-color: #F7F1F8;
     padding-top: 2rem;
-    border-top: 1px solid #eaeaea;
     width: 100%;
 }
 
@@ -53,7 +52,7 @@
 }
 
 .footer__link:hover {
-    color: #0066cc;
+    color: #5E548E;
 }
 
 .footer__address {
@@ -67,13 +66,14 @@
 }
 
 .footer__bottom {
-    background-color: #eaeaea;
+    background-color: #231942;
     padding: 1rem 0;
     text-align: center;
 }
 
 .footer__copyright {
-    color: #777;
+    background-color: #231942;
+    color: #FFF;
     font-size: 0.9rem;
     margin: 0;
 }
