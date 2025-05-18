@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import SearchBarIcon from '../../icons/SearchBarIcon';
 import './SearchBar.css'
 
 function SearchBar({ onSearch }) {
@@ -11,8 +12,7 @@ function SearchBar({ onSearch }) {
 
     const handleChange = (e) => {
         setSearchTerm(e.target.value);
-        // Opcional: búsqueda en tiempo real
-        // onSearch(e.target.value);
+        onSearch(e.target.value);
     };
 
     return (
