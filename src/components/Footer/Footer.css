@@ -18,6 +18,15 @@
     margin-bottom: 1.5rem;
 }
 
+.footer__logo {
+    font-family: "Allura", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
 .footer__title {
     color: #333;
     margin-bottom: 1rem;

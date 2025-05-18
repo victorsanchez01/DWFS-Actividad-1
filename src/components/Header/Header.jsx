@@ -22,7 +22,7 @@ function Header() {
         <header className="header">
             <div className="header__container">
                 <Link to="/home" className="header__logo">
-                    Librería Online
+                    Relatos De Papel
                 </Link>
 
                 <nav className="header__nav">

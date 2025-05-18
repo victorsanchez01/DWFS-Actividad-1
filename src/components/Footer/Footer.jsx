@@ -6,7 +6,7 @@ function Footer() {
         <footer className="footer">
             <div className="footer__container">
                 <div className="footer__section">
-                    <h3 className="footer__title">Librería Online</h3>
+                    <h3 className="footer__logo">Relatos De Papel</h3>
                     <p className="footer__description">
                         Tu tienda de libros en línea con las mejores selecciones de literatura,
                         ficción, no ficción y más.
@@ -26,10 +26,10 @@ function Footer() {
                 <div className="footer__section">
                     <h3 className="footer__title">Contacto</h3>
                     <address className="footer__address">
-                        <p>Calle Librería, 123</p>
-                        <p>28001 Madrid, España</p>
-                        <p>Email: info@libreria-online.com</p>
-                        <p>Teléfono: +34 91 123 45 67</p>
+                        <p>Calle de los libros</p>
+                        <p>Bogotá, Colombia</p>
+                        <p>Email: info@relatosdepapel.com</p>
+                        <p>Teléfono: +57 300 254 7843</p>
                     </address>
                 </div>
             </div>
