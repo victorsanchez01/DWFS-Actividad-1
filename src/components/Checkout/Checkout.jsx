@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import OrderSummary from '../OrderSummary/OrderSummary';
-import { useCart } from '../../context/CartContext'; // Importamos desde el contexto
+import { useCart } from '../../context/CartContext';
 import './Checkout.css';
 
 function Checkout({ onComplete }) {
