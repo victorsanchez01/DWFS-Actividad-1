@@ -11,7 +11,6 @@ function BookDetailView({ bookId }) {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Simulamos la carga de datos
         setLoading(true);
         setTimeout(() => {
             const foundBook = getBookById(bookId);
@@ -19,7 +18,6 @@ function BookDetailView({ bookId }) {
             if (foundBook) {
                 setBook(foundBook);
             } else {
-                // Si no se encuentra el libro, redirigimos a la página principal
                 navigate('/home');
             }
 
@@ -32,7 +30,7 @@ function BookDetailView({ bookId }) {
     }
 
     if (!book) {
-        return null; // Redirigiendo, no renderizamos nada
+        return null;
     }
 
     return (
@@ -48,7 +46,7 @@ function BookDetailView({ bookId }) {
             <div className="book-detail__content">
                 <h1 className="book-detail__title">{book.title}</h1>
                 <h2 className="book-detail__author">por {book.author}</h2>
-                <p className="book-detail__price">{book.price.toFixed(2)} €</p>
+                <p className="book-detail__price">$ {book.price.toFixed(2)}</p>
 
                 <p className="book-detail__description">{book.description}</p>
 
