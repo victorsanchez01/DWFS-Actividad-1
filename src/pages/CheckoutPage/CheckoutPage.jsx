@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './CheckoutPage.css'
-// import Checkout from '../../components/Checkout/Checkout'
+import Checkout from '../../components/Checkout/Checkout'
 
 function CheckoutPage() {
     const navigate = useNavigate();
@@ -14,7 +14,7 @@ function CheckoutPage() {
     return (
         <div className="checkout-page">
             <h1 className="checkout-page__title">Finalizar Compra</h1>
-            {/*<Checkout onComplete={handleCheckoutComplete} />*/}
+            <Checkout onComplete={handleCheckoutComplete} />
         </div>
     )
 }

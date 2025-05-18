@@ -19,7 +19,7 @@ function OrderSummary() {
               {item.title}
             </span>
                         <span className="order-summary__item-price">
-              {item.price.toFixed(2)} €
+              $ {item.price.toFixed(2)}
             </span>
                     </div>
                 ))}
@@ -27,17 +27,17 @@ function OrderSummary() {
 
             <div className="order-summary__total-row">
                 <span>Subtotal</span>
-                <span>{subtotal.toFixed(2)} €</span>
+                <span>$ {subtotal.toFixed(2)}</span>
             </div>
 
             <div className="order-summary__total-row">
                 <span>Envío</span>
-                <span>{shipping.toFixed(2)} €</span>
+                <span>$ {shipping.toFixed(2)}</span>
             </div>
 
             <div className="order-summary__total">
                 <span>Total</span>
-                <span>{total.toFixed(2)} €</span>
+                <span>$ {total.toFixed(2)}</span>
             </div>
         </div>
     );
