@@ -1,37 +1,28 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './LandingPage.css';
+import React, { useState } from 'react';
+import './HomePage.css';
+import SearchBar from '../../components/SearchBar/SearchBar';
+import BookList from '../../components/BookList/BookList';
 
-function LandingPage() {
-    const navigate = useNavigate();
+function HomePage() {
+    const [searchTerm, setSearchTerm] = useState('');
 
-    useEffect(() => {
-        const redirectTimer = setTimeout(() => {
-            navigate('/home');
-        }, 5000);
-
-        return () => clearTimeout(redirectTimer);
-    }, [navigate]);
+    const handleSearch = (term) => {
+        setSearchTerm(term);
+    };
 
     return (
-        <div className="landing-page">
-            <div className="landing-page__container">
-                <h1 className="landing-page__title">Bienvenido a nuestra Librería Online</h1>
-                <p className="landing-page__subtitle">
-                    Descubre miles de libros para todos los gustos
-                </p>
-                <button
-                    className="landing-page__button"
-                    onClick={() => navigate('/home')}
-                >
-                    Explorar ahora
-                </button>
-                <p className="landing-page__redirect-message">
-                    Serás redirigido automáticamente en 5 segundos...
-                </p>
+        <div className="home-page">
+            <div className="home-page__container">
+                <h1 className="home-page__title">Nuestro Catálogo de Libros</h1>
+                <div className="home-page__search-container">
+                    <SearchBar onSearch={handleSearch} />
+                </div>
+                <div className="home-page__content">
+                    <BookList searchTerm={searchTerm} />
+                </div>
             </div>
         </div>
     );
 }
 
-export default LandingPage;
+export default HomePage

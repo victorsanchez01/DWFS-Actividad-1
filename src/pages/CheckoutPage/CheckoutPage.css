@@ -1,0 +1,37 @@
+.checkout-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.checkout-page__title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.checkout-page__steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.checkout-page__step {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.checkout-page__step--active {
+    background-color: #0066cc;
+    color: white;
+}
+
+.checkout-page__empty-cart {
+    text-align: center;
+    padding: 3rem;
+    color: #777;
+}
