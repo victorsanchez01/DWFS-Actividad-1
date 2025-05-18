@@ -27,7 +27,11 @@ function Header() {
 
                 <nav className="header__nav">
                     <Link to="/home" className="header__nav-link">Inicio</Link>
-                    <button className="header__cart-button" onClick={toggleCart}>
+                    <button
+                        className="header__cart-button"
+                        onClick={toggleCart}
+                        aria-label="Abrir carrito"
+                    >
                         <svg
                             className="header__cart-icon"
                             width="24"
@@ -48,8 +52,6 @@ function Header() {
                         )}
                     </button>
                 </nav>
-
-                {/* Carrito desplegable */}
                 <Cart isOpen={isCartOpen} onClose={closeCart} />
             </div>
         </header>
