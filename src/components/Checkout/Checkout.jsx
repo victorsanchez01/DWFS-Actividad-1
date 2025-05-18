@@ -27,7 +27,6 @@ function Checkout({ onComplete }) {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Simulamos el proceso de pago
         setTimeout(() => {
             alert('¡Pedido realizado con éxito!');
             clearCart();
@@ -56,8 +55,6 @@ function Checkout({ onComplete }) {
             <div className="checkout__form">
                 <h2>Datos de Pago</h2>
                 <form onSubmit={handleSubmit}>
-                    {/* Los campos del formulario se mantienen igual */}
-                    {/* ... */}
                     <button
                         type="submit"
                         className="checkout__button"
