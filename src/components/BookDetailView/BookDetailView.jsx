@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getBookById } from '../../services/mockData';
-import { useCart } from '../../context/CartContext'; // Importamos desde el contexto
+import { useCart } from '../../context/CartContext';
+import Loader from "../Loader/Loader.jsx";
 import './BookDetailView.css';
 
 function BookDetailView({ bookId }) {
@@ -22,11 +23,13 @@ function BookDetailView({ bookId }) {
             }
 
             setLoading(false);
-        }, 800);
+        }, 2000);
     }, [bookId, navigate]);
 
     if (loading) {
-        return <div className="book-detail__loading">Cargando información del libro...</div>;
+        return <div className="book-detail__loading">
+            <Loader />
+        </div>;
     }
 
     if (!book) {

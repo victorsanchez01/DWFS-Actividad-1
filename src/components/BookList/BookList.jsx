@@ -3,6 +3,7 @@ import BookCard from '../BookCard/BookCard';
 import { getBooks } from '../../services/mockData';
 import { useCart } from '../../context/CartContext';
 import './BookList.css';
+import Loader from "../Loader/Loader.jsx";
 
 function BookList({ searchTerm }) {
     const [books, setBooks] = useState([]);
@@ -16,10 +17,9 @@ function BookList({ searchTerm }) {
             const data = getBooks();
             setBooks(data);
             setLoading(false);
-        }, 800);
+        }, 2000);
     }, []);
 
-    // Filtramos libros por título si hay un término de búsqueda
     const filteredBooks = searchTerm
         ? books.filter(book =>
             book.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -27,7 +27,9 @@ function BookList({ searchTerm }) {
         : books;
 
     if (loading) {
-        return <div className="book-list__loading">Cargando libros...</div>;
+        return <div>
+            <Loader />
+            </div>;
     }
 
     if (filteredBooks.length === 0) {
