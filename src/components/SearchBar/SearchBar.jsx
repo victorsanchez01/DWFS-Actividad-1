@@ -24,9 +24,9 @@ function SearchBar({ onSearch }) {
                 value={searchTerm}
                 onChange={handleChange}
             />
-            <button type="submit" className="search-bar__button">
+            <div className="search-bar__icon">
                 <SearchBarIcon />
-            </button>
+            </div>
         </form>
     );
 }
