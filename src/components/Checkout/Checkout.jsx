@@ -80,7 +80,7 @@ function Checkout({ onComplete }) {
                 <button
                     onClick={() => window.history.back()}
                     className="checkout__back-button">
-                    Volver a la tienda
+                    Volver al inicio
                 </button>
             </div>
         );

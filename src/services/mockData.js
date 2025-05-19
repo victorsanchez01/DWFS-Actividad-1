@@ -140,27 +140,3 @@ export const getBooks = () => {
 export const getBookById = (id) => {
     return books.find(book => book.id === id) || null;
 };
-
-export const searchBooks = (query) => {
-    const lowercaseQuery = query.toLowerCase();
-    return books.filter(book =>
-        book.title.toLowerCase().includes(lowercaseQuery) ||
-        book.author.toLowerCase().includes(lowercaseQuery)
-    );
-};
-
-export const getBooksByGenre = (genre) => {
-    return books.filter(book => book.genre === genre);
-};
-
-export const getBooksByAuthor = (author) => {
-    return books.filter(book => book.author === author);
-};
-
-export const getFeaturedBooks = () => {
-    return books.slice(0, 4);
-};
-
-export const getNewReleases = () => {
-    return [...books].sort((a, b) => b.year - a.year).slice(0, 5);
-};
