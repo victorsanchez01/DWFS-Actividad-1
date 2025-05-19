@@ -26,15 +26,3 @@
     transform: translateY(-50%);
     color: #777;
 }
-
-.search-bar__button {
-    position: absolute;
-    right: -1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #777;
-    padding: 0.5rem;
-}
