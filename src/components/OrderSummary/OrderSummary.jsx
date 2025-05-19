@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCart } from '../../context/CartContext'; // Importamos desde el contexto
+import { useCart } from '../../context/CartContext';
 import './OrderSummary.css';
 
 function OrderSummary() {

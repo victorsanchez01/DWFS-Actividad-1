@@ -116,7 +116,7 @@ const books = [
         price: 11.50,
         description: "Uno de los poemas épicos más antiguos de la literatura occidental. Narra el regreso de Ulises (Odiseo) a su hogar en Ítaca después de la Guerra de Troya, un viaje que duró diez años y estuvo lleno de aventuras y peligros.",
         coverImage: "/assets/images/books/laOdisea.webp",
-        year: -800, // Fecha aproximada
+        year: -800,
         genre: "Poema épico",
         pages: 448
     },
@@ -133,17 +133,14 @@ const books = [
     }
 ];
 
-// Función para obtener todos los libros
 export const getBooks = () => {
-    return [...books]; // Devuelve una copia para evitar mutaciones
+    return [...books];
 };
 
-// Función para obtener un libro por su ID
 export const getBookById = (id) => {
     return books.find(book => book.id === id) || null;
 };
 
-// Función para buscar libros por título
 export const searchBooks = (query) => {
     const lowercaseQuery = query.toLowerCase();
     return books.filter(book =>
@@ -152,24 +149,18 @@ export const searchBooks = (query) => {
     );
 };
 
-// Función para obtener libros por género
 export const getBooksByGenre = (genre) => {
     return books.filter(book => book.genre === genre);
 };
 
-// Función para obtener libros del mismo autor
 export const getBooksByAuthor = (author) => {
     return books.filter(book => book.author === author);
 };
 
-// Función para obtener libros destacados (simulado)
 export const getFeaturedBooks = () => {
-    // Devuelve los primeros 4 libros como destacados (podría ser otra lógica)
     return books.slice(0, 4);
 };
 
-// Función para obtener novedades (simulado como los últimos libros por año)
 export const getNewReleases = () => {
-    // Ordena por año descendente y devuelve los primeros 5
     return [...books].sort((a, b) => b.year - a.year).slice(0, 5);
 };

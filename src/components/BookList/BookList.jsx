@@ -11,7 +11,6 @@ function BookList({ searchTerm }) {
     const { addToCart } = useCart();
 
     useEffect(() => {
-        // Simulamos la carga de datos
         setLoading(true);
         setTimeout(() => {
             const data = getBooks();

@@ -27,7 +27,6 @@ function Checkout({ onComplete }) {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Simulamos el proceso de pago
         setTimeout(() => {
             alert('¡Pedido realizado con éxito!');
             clearCart();
@@ -36,13 +35,10 @@ function Checkout({ onComplete }) {
     };
 
     const handleCardNumberChange = (e) => {
-        // Eliminar espacios y caracteres no numéricos
         let value = e.target.value.replace(/\D/g, '');
 
-        // Limitar a 16 dígitos
         value = value.substring(0, 16);
 
-        // Agregar espacios cada 4 dígitos
         value = value.replace(/(\d{4})(?=\d)/g, '$1 ');
 
         setFormData(prev => ({
