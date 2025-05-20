@@ -66,13 +66,13 @@
     align-self: flex-start;
 }
 
+.checkout__back-button:hover, .checkout__button:hover {
+    background-color: #231942;
+}
+
 .checkout__button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
-}
-
-.checkout__back-button:hover, .checkout__button:hover {
-    background-color: #231942;
 }
 
 @media (max-width: 768px) {
